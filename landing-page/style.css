@@ -73,7 +73,7 @@ main {
 
 .sessao2 {
     background-color: rgb(243, 241, 241);
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -81,7 +81,7 @@ main {
 }
 
 .conteudo {
-    max-width: 1280px;
+    max-width: 1000px;
 }
 
 
