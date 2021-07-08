@@ -36,6 +36,7 @@ header {
     padding: 10px;
     margin: 0 10px;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 #menu a:hover {
@@ -68,6 +69,11 @@ main {
     max-width: 200px;
 }
 
+.sessao2 {
+    background-color: rgb(243, 241, 241);
+    padding: 20px;
+}
+
 footer {
     background-color: black;
 }
@@ -75,6 +81,8 @@ footer {
 @media screen and (max-width: 800px) {
     header {
         justify-content: space-between;
+        position: sticky;
+        top: 0;
     }
 
     #nome-mobile {
@@ -84,7 +92,7 @@ footer {
     #menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 60px;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
