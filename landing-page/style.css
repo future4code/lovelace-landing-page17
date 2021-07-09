@@ -67,6 +67,16 @@ header {
     background-color: #101010;
 }
 
+/* Ajusta a margem para o scroll quando o link é clicado */
+#quem-somos,
+#servicos,
+#nosso-time, 
+#trabalhe-conosco, 
+#contato {
+    padding-top: 85px;
+    margin-top: -85px;
+}
+
 /* ------- Conteúdo principal ------- */
 
 main {
@@ -118,53 +128,39 @@ main {
     margin-left: 30px;
 }
 
-
 .lado-a-lado img {
     max-width: 450px;
 }
 
-/* Ajusta a margem para o scroll quando o link é clicado */
-#quem-somos, {
-    padding-top: 85px;
-    margin-top: -85px;
-}
-
-
-.fundo-cinza {
-    background-color: rgb(243, 241, 241);
-    padding: 25px;
-    width: 100%;
+.pessoas {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.fundo-branco {
-    padding: 25px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-
-.conteudo {
+.individuo {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
 }
 
+.individuo img {
+    max-width: 300px;
+    margin-top: 15px;
+}
 
-.conteudo > h1 {
-    align-self: center;
+#nome-colaborador {
+    margin-top: 5px;
+    margin-bottom: 0;
 }
 
 .form-contato {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
- 
+
 .form-contato input {
     width: 250px;
 }
@@ -173,6 +169,7 @@ main {
     height: 230px;
 }
 
+/* ------- Footer ------- */
 
 footer {
     display: flex;
@@ -181,13 +178,11 @@ footer {
     background-color: black;
     color: whitesmoke;
     padding: 10px;
- 
 }
 
 .redes-sociais {
     display: flex;
-   align-items: center;
-
+    align-items: center;
 }
 
 footer img {
@@ -204,8 +199,9 @@ footer a {
 
 footer a:hover {
     color: #ff5c5c;
-
 }
+
+/* ------- Break point responsividade ------- */
 
 @media screen and (max-width: 800px) {
     header {
@@ -256,11 +252,8 @@ footer a:hover {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    /* .lado-a-lado > div {
-        margin: 10px 0;
-    } */
-
     .lado-a-lado img {
         max-width: 290px;
     }
+}
 
