@@ -118,6 +118,7 @@ main {
     margin-left: 30px;
 }
 
+
 .lado-a-lado img {
     max-width: 450px;
 }
@@ -129,432 +130,81 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.fundo-cinza {
+    background-color: rgb(243, 241, 241);
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.fundo-branco {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.conteudo > h1 {
+    align-self: center;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+ 
+.form-contato input {
+    width: 250px;
+}
+
+#mensagem {
+    height: 230px;
+}
 
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+ 
+}
+
+.redes-sociais {
+    display: flex;
+   align-items: center;
+
+}
+
+footer img {
+    width: 15px;
+    margin: 0 2px;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    color: #ff5c5c;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -613,4 +263,4 @@ footer {
     .lado-a-lado img {
         max-width: 290px;
     }
-}
+
