@@ -1,3 +1,5 @@
+/* ------- Geral ------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +27,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0; 
 }
+
+/* ------- Menu normal e hamburger ------- */
 
 #nome-mobile {
     display: none;
@@ -61,30 +67,66 @@ header {
     background-color: #101010;
 }
 
+/* ------- Conteúdo principal ------- */
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.sessao1 img {
+.logo img {
     max-width: 300px;
 }
 
-.sessao2 {
+.fundo-cinza {
     background-color: rgb(243, 241, 241);
-    padding: 20px;
+    padding: 25px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.fundo-branco {
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .conteudo {
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
+.conteudo > h1 {
+    align-self: center;
+}
 
+.lado-a-lado {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lado-a-lado > div {
+    margin: 10px;
+}
+
+.lado-a-lado li {
+    margin-left: 30px;
+}
+
+.lado-a-lado img {
+    max-width: 450px;
+}
+
+/* Ajusta a margem para o scroll quando o link é clicado */
+#quem-somos, {
+    padding-top: 85px;
+    margin-top: -85px;
+}
 
 
 
@@ -518,10 +560,9 @@ footer {
 @media screen and (max-width: 800px) {
     header {
         justify-content: space-between;
-        position: sticky;
-        top: 0;
     }
 
+    
     #nome-mobile {
         display: block;
     }
@@ -552,6 +593,7 @@ footer {
         cursor: pointer;
     }
 
+    /* Animação Menu hamburger */
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -564,4 +606,11 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* .lado-a-lado > div {
+        margin: 10px 0;
+    } */
+
+    .lado-a-lado img {
+        max-width: 290px;
+    }
 }
