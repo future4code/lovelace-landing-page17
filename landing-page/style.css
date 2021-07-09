@@ -31,6 +31,9 @@ header {
     top: 0; 
 }
 
+textarea {
+    width: 300px;
+}
 /* ------- Menu normal e hamburger ------- */
 
 #nome-mobile {
@@ -256,4 +259,3 @@ footer a:hover {
         max-width: 290px;
     }
 }
-
