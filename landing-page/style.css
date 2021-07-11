@@ -151,6 +151,7 @@ main {
 .individuo img {
     max-width: 300px;
     margin-top: 15px;
+    box-shadow: 2px 2px 5px lightgrey;
 }
 
 #nome-colaborador {
@@ -166,6 +167,15 @@ main {
 
 .form-contato input {
     width: 250px;
+}
+button {
+padding: 10px;
+}
+
+button:hover {
+ background-color: #ff5c5c;
+ color: whitesmoke;
+ 
 }
 
 #mensagem {
